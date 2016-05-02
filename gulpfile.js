@@ -6,16 +6,16 @@ const jade = require('gulp-jade');
 const browserSync = require('browser-sync');
 
 gulp.task('sass', function(){
-	return gulp.src('./app/flex-grid.sass')
+	return gulp.src('./dev/sass/flex-grid.sass')
 		.pipe(sass())
-		.pipe(gulp.dest('./dist'))
+		.pipe(gulp.dest('./'))
 		.pipe(browserSync.reload({
 			stream: true
 		}));
 });
 
 gulp.task('jade', function(){
-	return gulp.src('./app/test.jade')
+	return gulp.src('./dev/jade/test.jade')
 		.pipe(jade({
 			pretty: true
 		}))
@@ -31,6 +31,8 @@ gulp.task('browserSync', function(){
 });
 
 gulp.task('watch', ['browserSync', 'sass'], function(){
-	gulp.watch('./app/test.jade', ['jade']);
-	gulp.watch('./app/flex-grid.sass', ['sass']);
+	gulp.watch('./dev/jade/test.jade', ['jade']);
+	gulp.watch('./dev/sass/*.sass', ['sass']);
 });
+
+gulp.task('default', ['watch']);
