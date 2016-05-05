@@ -1,0 +1,25 @@
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg
+	display: none
+@media screen and (max-width: ($break-sm - 1px))
+	.visible-xs
+		display: block
+	.hidden-xs
+		display: none
+@media screen and (min-width: $break-sm) and (max-width: ($break-md + 1px))
+	.visible-sm
+		display: block
+	.hidden-sm
+		display: none
+@media screen and (min-width: $break-md) and (max-width: ($break-lg - 1px))
+	.visible-md
+		display: block
+	.hidden-md
+		display: none
+@media screen and (min-width: $break-lg)
+	.visible-lg
+		display: block
+	.hidden-lg
+		display: none

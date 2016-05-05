@@ -5,6 +5,36 @@
 .col {
   background: tomato; }
 
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+  display: none; }
+
+@media screen and (max-width: 767px) {
+  .visible-xs {
+    display: block; }
+  .hidden-xs {
+    display: none; } }
+
+@media screen and (min-width: 768px) and (max-width: 993px) {
+  .visible-sm {
+    display: block; }
+  .hidden-sm {
+    display: none; } }
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .visible-md {
+    display: block; }
+  .hidden-md {
+    display: none; } }
+
+@media screen and (min-width: 1200px) {
+  .visible-lg {
+    display: block; }
+  .hidden-lg {
+    display: none; } }
+
 .container {
   max-width: 1080px;
   margin: auto;
