@@ -24,7 +24,7 @@ Columns one through twelve: ```<div class="col one">```
 
 ##Responsive Helper Classes
 
-Adding classes ```.xs```, ```.sm```, ```.md```, and ```.lg``` makes the ```.col``` children in that row display the full width
+Adding classes ```.xs```, ```.sm```, ```.md```, and ```.lg``` to a ```.row``` makes the ```.col``` children in that row display the full width.
 
 Much like Bootstrap, Flex-Grid offers helpful classes. 
 
