@@ -10,6 +10,12 @@ Flex-Grid also makes it incredibly easy to change the defaults, such as max-widt
 
 ##Basic Usage
 
+Make sure to include the viewport meta tag:
+```<meta name="viewport" content="width=device-width, initial-scale=1">```
+
+Also include normalize.css:
+```<link href="https://necolas.github.io/normalize.css/4.1.1/normalize.css" rel="stylesheet">```
+
 Wrap your Flex-Grid in the container class: ```<div class="container">```
 
 For each row: ```<div class="row">```
@@ -17,6 +23,8 @@ For each row: ```<div class="row">```
 Columns one through twelve: ```<div class="col one">```
 
 ##Responsive Helper Classes
+
+Adding classes ```.xs```, ```.sm```, ```.md```, and ```.lg``` makes the ```.col``` children in that row display the full width
 
 Much like Bootstrap, Flex-Grid offers helpful classes. 
 

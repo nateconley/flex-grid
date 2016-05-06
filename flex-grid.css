@@ -1,39 +1,8 @@
 .row {
-  height: 10rem;
   background: #ddd; }
 
 .col {
   background: tomato; }
-
-.visible-xs,
-.visible-sm,
-.visible-md,
-.visible-lg {
-  display: none; }
-
-@media screen and (max-width: 767px) {
-  .visible-xs {
-    display: block; }
-  .hidden-xs {
-    display: none; } }
-
-@media screen and (min-width: 768px) and (max-width: 993px) {
-  .visible-sm {
-    display: block; }
-  .hidden-sm {
-    display: none; } }
-
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  .visible-md {
-    display: block; }
-  .hidden-md {
-    display: none; } }
-
-@media screen and (min-width: 1200px) {
-  .visible-lg {
-    display: block; }
-  .hidden-lg {
-    display: none; } }
 
 .container {
   max-width: 1080px;
@@ -47,7 +16,7 @@
   width: 100%; }
 
 .col {
-  display: inline-block;
+  display: block;
   margin-right: 2%;
   margin-left: 2%; }
 
@@ -86,3 +55,73 @@
 
 .twelve {
   width: 100%; }
+
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+  display: none; }
+
+@media screen and (max-width: 767px) {
+  .visible-xs {
+    display: block; }
+  .hidden-xs {
+    display: none; } }
+
+@media screen and (min-width: 768px) and (max-width: 993px) {
+  .visible-sm {
+    display: block; }
+  .hidden-sm {
+    display: none; } }
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .visible-md {
+    display: block; }
+  .hidden-md {
+    display: none; } }
+
+@media screen and (min-width: 1200px) {
+  .visible-lg {
+    display: block; }
+  .hidden-lg {
+    display: none; } }
+
+@media screen and (max-width: 767px) {
+  .row.xs {
+    background: blue;
+    flex-wrap: wrap; }
+    .row.xs .col {
+      width: 100%;
+      margin-bottom: 2%; }
+      .row.xs .col:last-child {
+        margin-bottom: 0; } }
+
+@media screen and (min-width: 768px) and (max-width: 993px) {
+  .row.sm {
+    background: blue;
+    flex-wrap: wrap; }
+    .row.sm .col {
+      width: 100%;
+      margin-bottom: 2%; }
+      .row.sm .col:last-child {
+        margin-bottom: 0; } }
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .row.md {
+    background: blue;
+    flex-wrap: wrap; }
+    .row.md .col {
+      width: 100%;
+      margin-bottom: 2%; }
+      .row.md .col:last-child {
+        margin-bottom: 0; } }
+
+@media screen and (min-width: 1200px) {
+  .row.lg {
+    background: blue;
+    flex-wrap: wrap; }
+    .row.lg .col {
+      width: 100%;
+      margin-bottom: 2%; }
+      .row.lg .col:last-child {
+        margin-bottom: 0; } }

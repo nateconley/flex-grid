@@ -1,0 +1,47 @@
+
+
+
+
+// xs
+@media screen and (max-width: ($break-sm - 1px))
+	.row.xs
+		background: blue
+		flex-wrap: wrap
+		.col
+			width: 100%
+			margin-bottom: $margin
+			&:last-child
+				margin-bottom: 0
+
+// sm
+@media screen and (min-width: $break-sm) and (max-width: ($break-md + 1px))
+	.row.sm
+		background: blue
+		flex-wrap: wrap
+		.col
+			width: 100%
+			margin-bottom: $margin
+			&:last-child
+				margin-bottom: 0
+
+// md
+@media screen and (min-width: $break-md) and (max-width: ($break-lg - 1px))
+	.row.md
+		background: blue
+		flex-wrap: wrap
+		.col
+			width: 100%
+			margin-bottom: $margin
+			&:last-child
+				margin-bottom: 0
+
+// lg
+@media screen and (min-width: $break-lg)
+	.row.lg
+		background: blue
+		flex-wrap: wrap
+		.col
+			width: 100%
+			margin-bottom: $margin
+			&:last-child
+				margin-bottom: 0
