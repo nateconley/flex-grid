@@ -25,7 +25,8 @@ gulp.task('jade', function(){
 gulp.task('browserSync', function(){
 	browserSync.init({
 		server: {
-			baseDir: './'
+			baseDir: './',
+			index: 'examples/test.html'
 		},
 		open: false
 	});
@@ -34,6 +35,7 @@ gulp.task('browserSync', function(){
 gulp.task('watch', ['browserSync', 'sass'], function(){
 	gulp.watch('./dev/jade/test.jade', ['jade']);
 	gulp.watch('./dev/sass/*.sass', ['sass']);
+	gulp.watch('./examples/*.html').on('change', browserSync.reload);
 });
 
 gulp.task('default', ['watch']);
