@@ -43,6 +43,10 @@ Much like Bootstrap, Flex-Grid offers helpful classes.
 
 **Please Note:** These classes default to ```display: block``` when visible
 
+##Order
+
+Attach the order to an element by adding the class ```first``` through ```twelfth```. You can also have order based off of a maximum width. For example, you can use classes like ```second-sm```, ```fourth-md```, or ```seventh-lg```.
+
 
 **To-Do:**
 Make standard columns responsive
